@@ -326,7 +326,7 @@ def streamlitHoekBrown():
     
     a.markdown('<font size="1.5">Disclaimer: This is a personal project and not endorsed by any other parties. All responsibility with the use of this tool lies with the user. Proper QA should be performed to use in any project.</font>', unsafe_allow_html=True)
 
-    cols = st.beta_columns([1, 1, 2])
+    cols = st.columns([1, 1, 2])
 
     with cols[0]:
         st.markdown("**General Parameters**")
@@ -676,7 +676,7 @@ def streamlitHoekBrown():
                 "miSTD": 5,
             },
         }
-        with st.beta_expander("Database for Different Rock Types"):
+        with st.expander("Database for Different Rock Types"):
             RockType = st.selectbox(
                 "Select the rock type. (Just write the letters to search.)",
                 list(RockDict.keys()),
@@ -700,10 +700,10 @@ def streamlitHoekBrown():
             
 
 
-    with st.beta_expander("Design aids"):
+    with st.expander("Design aids"):
         st.markdown("*Click on the full size button at upper right corners to expand!*")
 
-        col_im = st.beta_columns(3)
+        col_im = st.columns(3)
         with col_im[0]:
             GSI_im = Image.open("images/GSI.png")
             st.image(GSI_im, caption="GSI Selection Chart")
@@ -716,7 +716,7 @@ def streamlitHoekBrown():
 
     Rock = HoekBrown(UCS, GSI, mi, D, E_Method, sigma3_method, UW, H, MR, Name, Ei)
 
-    with st.beta_expander("ICE"):
+    with st.expander("ICE"):
         st.markdown(
             "Index of Elastic Behaviour as described by Celeda & Bieniawski - Ground Characterization and Structural Analyses for Tunnel Design - 2020"
         )
