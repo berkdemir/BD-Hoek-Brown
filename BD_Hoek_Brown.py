@@ -315,7 +315,7 @@ def streamlitHoekBrown():
     a.markdown("[Link to Theory](https://berkdemir.github.io/2021/09/18/Hoek-Brown-Model/)")
 
     a.subheader("Interview with Evert Hoek:")
-    a.markdown("[Link for Interview](https://www.dropbox.com/s/xh0uo01wr5uu4d7/Hoek%20-%20Interview.pdf?dl=0)")
+    a.markdown("[Link for Interview](https://github.com/berkdemir/berkdemir.github.io/blob/main/images/Hoek%20-%20Interview.pdf)")
     
     a.subheader("Reference:")
     a.write("Following reference should be used for commercial or academical use: Berk Demir (2021) Hoek Brown Tool at github.com/berkdemir")
