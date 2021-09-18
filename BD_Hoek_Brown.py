@@ -312,7 +312,7 @@ def streamlitHoekBrown():
 
     
     a.subheader("Theory:")
-    a.markdown("[Link for Notion Page](https://www.notion.so/zircon-minute-9f3/Hoek-Brown-Analysis-ccc794b81fd34143b99b397843d6e09f)")
+    a.markdown("[Link to Theory](https://berkdemir.github.io/2021/09/18/Hoek-Brown-Model/)")
 
     a.subheader("Interview with Evert Hoek:")
     a.markdown("[Link for Interview](https://www.dropbox.com/s/xh0uo01wr5uu4d7/Hoek%20-%20Interview.pdf?dl=0)")
