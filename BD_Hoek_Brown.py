@@ -317,9 +317,6 @@ def streamlitHoekBrown():
     a.subheader("Interview with Evert Hoek:")
     a.markdown("[Link for Interview](https://www.dropbox.com/s/xh0uo01wr5uu4d7/Hoek%20-%20Interview.pdf?dl=0)")
     
-    a.subheader("Prepared By:")
-    a.write("Berk Demir - bdem@niras.dk")
-    
     a.subheader("Reference:")
     a.write("Following reference should be used for commercial or academical use: Berk Demir (2021) Hoek Brown Tool at github.com/berkdemir")
     a.markdown("[![DOI](https://zenodo.org/badge/407704889.svg)](https://zenodo.org/badge/latestdoi/407704889)")
