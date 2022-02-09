@@ -321,7 +321,7 @@ def streamlitHoekBrown():
     a.write("Following reference should be used for commercial or academical use: Berk Demir (2021) Hoek Brown Tool at github.com/berkdemir")
     
     a.markdown('<font size="1.5">Disclaimer: This is a personal project and not endorsed by any other parties. All responsibility with the use of this tool lies with the user. Proper QA should be performed to use in any project.</font>', unsafe_allow_html=True)
-
+    a.write(st.secrets["password"])
     cols = st.columns([1, 1, 2])
 
     with cols[0]:
