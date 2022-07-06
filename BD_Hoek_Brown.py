@@ -696,7 +696,7 @@ def streamlitHoekBrown():
                     + str(RockDict[RockType]["MRSTD"])
                 )
             st.markdown(
-                "**Material Constant for Intact Rock (mi):**"
+                "*Material Constant for Intact Rock (mi):*"
                 + str(RockDict[RockType]["mi"])
                 + " ± "
                 + str(RockDict[RockType]["miSTD"])
