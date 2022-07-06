@@ -22,6 +22,7 @@ a = st.sidebar
 BD_im = Image.open("images/BDTunnelTools.png")
 a.image(BD_im)
 
+
 class HoekBrown:
     def __init__(
         self,
@@ -62,10 +63,10 @@ class HoekBrown:
         }
 
         self.inputs = {
-            r"  $UCS$  ": round(self.UCS,1),
-            r"  $GSI$  ": round(self.GSI,0),
-            r"   $m_i$   ": round(self.mi,0),
-            r"   $D$   ": round(self.D,2),
+            r"  $UCS$  ": round(self.UCS, 1),
+            r"  $GSI$  ": round(self.GSI, 0),
+            r"   $m_i$   ": round(self.mi, 0),
+            r"   $D$   ": round(self.D, 2),
             r"  $Modulus\/\/Calculation$  ": self.E_Method,
             r" $\sigma_{3}\/\/Method$  ": self.sigma3_method,
         }
@@ -257,7 +258,7 @@ class HoekBrown:
         ax.set_title("Hoek Brown Analysis for " + self.Name, fontweight="bold")
         ax.set_xlabel(r"$\sigma_3$ - Minor Stress (MPa)")
         ax.set_ylabel(r"$\sigma_1$ - Major Stress (MPa)")
-        ax.plot([], [], ' ', label="github.com/berkdemir")
+        ax.plot([], [], " ", label="github.com/berkdemir")
         ax.legend(loc=4, fontsize="small")
         ax.spines["left"].set_position("zero")
         ax.spines["right"].set_color("none")
@@ -310,17 +311,25 @@ def streamlitHoekBrown():
     a.subheader("Settings:")
     Name = a.text_input("Rock layer's name", value="Rock")
 
-    
     a.subheader("Theory:")
-    a.markdown("[Link to Theory](https://berkdemir.github.io/2021/09/18/Hoek-Brown-Model/)")
+    a.markdown(
+        "[Link to Theory](https://berkdemir.github.io/2021/09/18/Hoek-Brown-Model/)"
+    )
 
     a.subheader("Interview with Evert Hoek:")
-    a.markdown("[Link for Interview](https://github.com/berkdemir/berkdemir.github.io/blob/main/images/Hoek%20-%20Interview.pdf)")
-    
+    a.markdown(
+        "[Link for Interview](https://github.com/berkdemir/berkdemir.github.io/blob/main/images/Hoek%20-%20Interview.pdf)"
+    )
+
     a.subheader("Reference:")
-    a.write("Following reference should be used for commercial or academical use: Berk Demir (2021) Hoek Brown Tool at github.com/berkdemir")
-    
-    a.markdown('<font size="1.5">Disclaimer: This is a personal project and not endorsed by any other parties. All responsibility with the use of this tool lies with the user. Proper QA should be performed to use in any project.</font>', unsafe_allow_html=True)
+    a.write(
+        "Following reference should be used for commercial or academical use: Berk Demir (2021) Hoek Brown Tool at github.com/berkdemir"
+    )
+
+    a.markdown(
+        '<font size="1.5">Disclaimer: This is a personal project and not endorsed by any other parties. All responsibility with the use of this tool lies with the user. Proper QA should be performed to use in any project.</font>',
+        unsafe_allow_html=True,
+    )
     cols = st.columns([1, 1, 2])
 
     with cols[0]:
@@ -681,19 +690,17 @@ def streamlitHoekBrown():
                 or E_Method == "Yang (2006) / AASHTO"
             ):
                 st.markdown(
-                    "**Modulus Ratio (MR): **"
+                    "**Modulus Ratio (MR):**"
                     + str(RockDict[RockType]["MR"])
                     + " ± "
                     + str(RockDict[RockType]["MRSTD"])
                 )
             st.markdown(
-                "**Material Constant for Intact Rock (mi): **"
+                "**Material Constant for Intact Rock (mi):**"
                 + str(RockDict[RockType]["mi"])
                 + " ± "
                 + str(RockDict[RockType]["miSTD"])
             )
-            
-
 
     with st.expander("Design aids"):
         st.markdown("*Click on the full size button at upper right corners to expand!*")
@@ -772,7 +779,6 @@ def streamlitHoekBrown():
             "Additional Parameters", list(Rock.add_parameters.keys())
         )
         st.info(Rock.add_parameters[add_selection])
-      
 
 
 streamlitHoekBrown()
