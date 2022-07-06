@@ -690,13 +690,13 @@ def streamlitHoekBrown():
                 or E_Method == "Yang (2006) / AASHTO"
             ):
                 st.markdown(
-                    "Modulus Ratio (MR):"
+                    "Modulus Ratio (MR): "
                     + str(RockDict[RockType]["MR"])
                     + " ± "
                     + str(RockDict[RockType]["MRSTD"])
                 )
             st.markdown(
-                "Material Constant for Intact Rock (mi):"
+                "Material Constant for Intact Rock (mi): "
                 + str(RockDict[RockType]["mi"])
                 + " ± "
                 + str(RockDict[RockType]["miSTD"])
