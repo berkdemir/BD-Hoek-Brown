@@ -296,8 +296,8 @@ class HoekBrown:
             bbox=[0.1, -0.35, 0.9, 0.15],
         )
 
-        [t.auto_set_font_size(False) for t in [table1, table2]]
-        [t.set_fontsize(9) for t in [table1, table2]]
+        _ = [t.auto_set_font_size(False) for t in [table1, table2]]
+        _ = [t.set_fontsize(9) for t in [table1, table2]]
 
         table2.auto_set_column_width(col=list(range(len(self.inputs.keys()))))
         table1.auto_set_column_width(col=list(range(len(self.results.keys()))))
@@ -314,11 +314,6 @@ def streamlitHoekBrown():
     a.subheader("Theory:")
     a.markdown(
         "[Link to Theory](https://berkdemir.github.io/2021/09/18/Hoek-Brown-Model/)"
-    )
-
-    a.subheader("Interview with Evert Hoek:")
-    a.markdown(
-        "[Link for Interview](https://github.com/berkdemir/berkdemir.github.io/blob/main/images/Hoek%20-%20Interview.pdf)"
     )
 
     a.subheader("Reference:")
