@@ -313,7 +313,7 @@ def streamlitHoekBrown():
 
     a.subheader("Theory:")
     a.markdown(
-        "[Link to Theory](https://berkdemir.github.io/2021/09/18/Hoek-Brown-Model/)"
+        "[Link to Theory](https://bdem.notion.site/Hoek-Brown-Model-a0756a34670e42038d5365c2a5d4c578)"
     )
 
     a.subheader("Reference:")
